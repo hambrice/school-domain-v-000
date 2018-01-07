@@ -9,6 +9,7 @@ def initialize(name)
 end
 
 def add_student(student_name, grade)
+    @roster
     @roster[grade] = []
   @roster[grade] << student_name
 end
