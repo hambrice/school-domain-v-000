@@ -22,6 +22,8 @@ def grade(grade)
 end
 
 def sort 
- @roster.sort
+ @roster.collect do |grade, student_name|
+    @roster[grade] = @roster[grade].sort
+  end
 end
 end
