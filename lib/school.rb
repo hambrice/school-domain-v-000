@@ -9,7 +9,7 @@ def initialize(name)
 end
 
 def add_student(student_name, grade)
-    @roster.each do |grade
+    @roster.each do |grade, 
     @roster[grade] = []
   @roster[grade] << student_name
 end
