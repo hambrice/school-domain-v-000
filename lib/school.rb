@@ -1,3 +1,4 @@
+
 class School
 def initialize(name)
   @name = name
@@ -10,3 +11,5 @@ def add_student(student_name, grade)
   @roster[grade] << student_name
 end
 end
+school = School.new 
+school.roster
