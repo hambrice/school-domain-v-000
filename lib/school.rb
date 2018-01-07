@@ -4,10 +4,11 @@ def initialize(name)
   @name = name
 end
 def roster
-  @hash = Hash.new
+  @roster = Hash.new
 end
 def add_student(student_name, grade)
-    @hash[grade] = []
-  @hash[grade] << student_name
+  roster
+    @roster[grade] = []
+  @roster[grade] << student_name
 end
 end
