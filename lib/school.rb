@@ -22,7 +22,7 @@ def grade(grade)
 end
 
 def sort 
-  @roster.replace do |grade, student_name|
+  new_roster = @roster.each do |grade, student_name|
     @roster[grade].sort
   end
 end
