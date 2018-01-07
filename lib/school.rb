@@ -9,7 +9,7 @@ def initialize(name)
 end
 
 def add_student(student_name, grade)
-    if @roster.any? {|grades, student_names| grade == grades}
+    if @roster.any? {|grade, student_names| grade == grade}
       @roster[grades] << student_name
     else
     @roster[grade] = []
