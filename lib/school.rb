@@ -4,7 +4,7 @@ def initialize(name)
   @name = name
 end
 def roster
-  @hash = {}
+  @hash = Hash.new
 end
 def add_student(student_name, grade)
     @hash[grade] = []
